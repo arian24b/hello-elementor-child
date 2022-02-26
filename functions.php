@@ -33,7 +33,7 @@ add_filter( 'update_footer', 'wp_remove_version', 9999 );
 
 //Remove Site Health
 function themeprefix_remove_dashboard_widget() {
-    remove_meta_box( 'dashboard_site_health', 'dashboard', 'normal' );
+    remove_meta_box( 'dashboard_site_health', 'dashboard', 'normal', 'core' );
 }
 function remove_site_health_menu(){
   remove_submenu_page( 'tools.php','site-health.php' ); 
